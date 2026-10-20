@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Silent Hill - Sitio Web de la Saga</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -262,12 +263,15 @@
 
         <section id="easter-eggs">
             <h2>Easter eggs y detalles recurrentes</h2>
-            <ul>
+            <button id="btnEaster">Ocultar easter eggs</button>
+            <ul id="listaEaster">
                 <li>El número 7 aparece repetido en distintos juegos de la saga.</li>
                 <li>Todos los juegos, desde el primero, incluyen un final alternativo con una nave OVNI.</li>
                 <li>Robbie the Rabbit aparece escondido en escenas de casi todas las entregas.</li>
                 <li>La estática de radio se usa en varios juegos para advertir la cercanía de un enemigo.</li>
             </ul>
+            <button id="btnDato">Mostrar dato curioso</button>
+            <p id="textoDato"></p>
         </section>
 
         <section id="contacto">
@@ -283,13 +287,15 @@
                 <li><a href="https://silenthill.fandom.com/wiki/Silent_Hill_Wiki" target="_blank">Silent Hill Wiki (Fandom)</a></li>
             </ul>
         </section>
-
     </main>
 
+<button id="btnArriba">Volver arriba</button>
+
     <footer>
+
         <p>Trabajo práctico - Etapa 1: HTML - UNPAZ</p>
     </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html>
