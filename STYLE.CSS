@@ -1,3 +1,93 @@
+:root {
+    --fondo: #14161a;
+    --superficie: #1e2126;
+    --borde: #3a3f47;
+    --texto: #d9d9d4;
+    --acento: #b3342b;
+    --acento-claro: #d9574c;
+    --fuente-titulos: Georgia, "Times New Roman", serif;
+    --fuente-texto: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: var(--fuente-texto);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--fuente-titulos);
+    font-weight: normal;
+    letter-spacing: 0.04em;
+}
+
+a { color: var(--acento-claro); }
+a:hover { color: #fff; }
+
+#encabezado {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    background: linear-gradient(#000, var(--fondo));
+    border-bottom: 3px solid var(--acento);
+}
+#encabezado h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    letter-spacing: 0.3em;
+    color: #fff;
+}
+#encabezado p { margin: 0.5rem 0 0; color: #a9a9a3; }
+
+#menu {
+    background: var(--superficie);
+    border-bottom: 1px solid var(--borde);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+#menu h2 {
+    position: absolute;
+    left: -9999px;
+}
+#menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0.75rem;
+}
+#menu a {
+    display: block;
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    border: 1px solid var(--borde);
+    border-radius: 4px;
+}
+#menu a:hover { background: var(--acento); color: #fff; }
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+main > section {
+    background: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+main > section > h2 {
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--acento);
+}
 
 #juegos {
     display: grid;
@@ -80,6 +170,15 @@ button {
 }
 button:hover { background: var(--acento-claro); }
 
+#pie {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: #000;
+    border-top: 3px solid var(--acento);
+    color: #8a8a85;
+}
+#pie p { margin: 0; }
+
 @media (max-width: 900px) {
     #juegos { grid-template-columns: repeat(2, 1fr); }
 }
@@ -93,3 +192,12 @@ button:hover { background: var(--acento-claro); }
     #monstruos > ul { grid-template-columns: 1fr; }
     .retrato { flex: 1 1 45%; max-width: none; }
     main > section { padding: 1rem; }
+}
+
+.btn-ficha { margin-bottom: 0.5rem; align-self: flex-start; font-size: 0.85rem; }
+#buscador { max-width: 520px; margin-bottom: 0.5rem; }
+#contador { margin: 0.25rem 0 0.75rem; color: #a9a9a3; font-size: 0.9rem; }
+.error { display: block; color: var(--acento-claro); font-size: 0.85rem; }
+.invalido { border-color: var(--acento-claro); }
+#resultado-form.ok { color: #6fcf7f; }
+#resultado-form.fallo { color: var(--acento-claro); }

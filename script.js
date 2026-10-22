@@ -42,3 +42,50 @@ function filtrar() {
 buscador.addEventListener('input', filtrar);
 filtrar();
 
+var form = document.getElementById('form-contacto');
+var resultado = document.createElement('p');
+resultado.id = 'resultado-form';
+resultado.setAttribute('role', 'status');
+form.appendChild(resultado);
+
+function mostrarError(campo, mensaje) {
+    var aviso = campo.parentElement.querySelector('.error');
+    if (!aviso) {
+        aviso = document.createElement('span');
+        aviso.className = 'error';
+        campo.parentElement.appendChild(aviso);
+    }
+    aviso.textContent = mensaje;
+    campo.classList.toggle('invalido', mensaje !== '');
+    return mensaje === '';
+}
+
+function validar() {
+    var nombre = form.nombre;
+    var email = form.email;
+    var mensaje = form.mensaje;
+    var patronEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    var okNombre = mostrarError(nombre,
+        nombre.value.trim().length < 3 ? 'El nombre debe tener al menos 3 caracteres.' : '');
+    var okEmail = mostrarError(email,
+        !patronEmail.test(email.value.trim()) ? 'Ingresá un email válido (ej: nombre@dominio.com).' : '');
+    var okMensaje = mostrarError(mensaje,
+        mensaje.value.trim().length < 10 ? 'El mensaje debe tener al menos 10 caracteres.' : '');
+
+    return okNombre && okEmail && okMensaje;
+}
+
+form.setAttribute('novalidate', '');
+form.addEventListener('submit', function (evento) {
+    evento.preventDefault();
+    resultado.className = '';
+    if (validar()) {
+        resultado.textContent = 'Mensaje enviado correctamente. ¡Gracias por escribirnos!';
+        resultado.className = 'ok';
+        form.reset();
+    } else {
+        resultado.textContent = 'Revisá los campos marcados antes de enviar.';
+        resultado.className = 'fallo';
+    }
+});

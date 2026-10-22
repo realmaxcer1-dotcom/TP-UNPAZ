@@ -7,12 +7,13 @@
 </head>
 <body>
 
-    <header>
+    <header id="encabezado">
         <h1>SILENT HILL</h1>
-        <p>Sitio informativo sobre la saga de videojuegos de terror desarrollada por Konami</p>
+        <p>Sitio informativo sobre la saga de videojuegos de terror publicada por Konami</p>
     </header>
 
-    <nav>
+
+    <nav id="menu">
         <h2>Menú de navegación</h2>
         <ul>
             <li><a href="#juegos">Juegos</a></li>
@@ -29,87 +30,165 @@
         <section id="juegos">
             <h2>Los juegos de la saga</h2>
             <p>
-                Silent Hill es una franquicia de survival horror publicada por Konami
-                desde 1999. A continuación se detallan las entregas principales de la serie.
+                Silent Hill es una franquicia de survival horror publicada por Konami desde 1999.
+                Los primeros cuatro juegos fueron desarrollados por Team Silent; las entregas
+                posteriores estuvieron a cargo de distintos estudios. A continuación se detallan
+                todos los títulos de la serie, en orden de lanzamiento.
             </p>
 
-            <h3>Silent Hill (1999)</h3>
-            <p>
-                Primer juego de la saga. Harry Mason sufre un accidente automovilístico
-                a las afueras del pueblo de Silent Hill y, al despertar, descubre que su
-                hija adoptiva Cheryl ha desaparecido. El jugador la busca por el pueblo
-                mientras se revela la existencia de una secta local llamada la Orden.
-            </p>
-            <img src="SH1.jpg" alt="Silent Hill, primera entrega de 1999">
+            <article class="juego" id="sh1">
+                <h3>Silent Hill (1999)</h3>
+                <ul class="datos">
+                    <li>Plataforma: PlayStation</li>
+                    <li>Desarrollo: Team Silent (Konami)</li>
+                </ul>
+                <p>
+                    Primer juego de la saga. Harry Mason sufre un accidente automovilístico a las
+                    afueras del pueblo de Silent Hill y descubre que su hija adoptiva Cheryl ha
+                    desaparecido. Mientras la busca, el jugador descubre la existencia de una secta
+                    local llamada la Orden.
+                </p>
+                <figure>
+                    <img src="SH1.jpg" alt="Silent Hill, primera entrega de 1999">
+                    <figcaption>Silent Hill (1999)</figcaption>
+                </figure>
+            </article>
 
-            <h3>Silent Hill 2 (2001)</h3>
-            <p>
-                James Sunderland recibe una carta de su esposa Mary, fallecida tres años
-                antes, citándolo en Silent Hill. Durante su búsqueda se enfrenta a
-                monstruos que representan su propia culpa, entre ellos Pyramid Head.
-                El juego fue rehecho como remake en 2024, desarrollado por Bloober Team.
-            </p>
-            <img src="SH2.jpg" alt="Silent Hill 2, entrega de 2001">
+            <article class="juego" id="sh2">
+                <h3>Silent Hill 2 (2001)</h3>
+                <ul class="datos">
+                    <li>Plataformas: PlayStation 2, Xbox y PC</li>
+                    <li>Desarrollo: Team Silent (Konami)</li>
+                </ul>
+                <p>
+                    James Sunderland recibe una carta de su esposa Mary, fallecida tres años antes,
+                    que lo cita en Silent Hill. Durante su recorrido se enfrenta a criaturas que
+                    representan su culpa, entre ellas Pyramid Head. Existen ediciones ampliadas con el escenario extra Born From a Wish: Restless Dreams (Xbox, 2001) y Director's Cut (PS2 y PC, en Europa).
+                </p>
+                <figure>
+                    <img src="SH2.jpg" alt="Silent Hill 2, entrega de 2001">
+                    <figcaption>Silent Hill 2 (2001)</figcaption>
+                </figure>
+            </article>
 
-            <h3>Silent Hill 3 (2003)</h3>
-            <p>
-                Heather Mason, una adolescente, es perseguida por miembros de la Orden,
-                la misma secta del primer juego, que la considera clave para el
-                renacimiento de su deidad. La historia conecta directamente con los
-                eventos de Silent Hill (1999).
-            </p>
-            <img src="SH3.jpg" alt="Silent Hill 3, entrega de 2003">
+            <article class="juego" id="sh3">
+                <h3>Silent Hill 3 (2003)</h3>
+                <ul class="datos">
+                    <li>Plataformas: PlayStation 2 y PC</li>
+                    <li>Desarrollo: Team Silent (Konami)</li>
+                </ul>
+                <p>
+                    Heather Mason, una adolescente, es perseguida por miembros de la Orden, la
+                    secta del primer juego, que la considera clave para el renacimiento de su
+                    deidad. La historia continúa directamente los hechos de Silent Hill (1999).
+                </p>
+                <figure>
+                    <img src="SH3.jpg" alt="Silent Hill 3, entrega de 2003">
+                    <figcaption>Silent Hill 3 (2003)</figcaption>
+                </figure>
+            </article>
 
-            <h3>Silent Hill 4: The Room (2004)</h3>
-            <p>
-                Henry Townshend queda encerrado en su propio departamento, del que solo
-                puede escapar a través de un agujero que conecta con distintos mundos
-                distorsionados, incluyendo el pueblo de Silent Hill.
-            </p>
-            <img src="SH4.jpg" alt="Silent Hill 4: The Room, entrega de 2004">
+            <article class="juego" id="sh4">
+                <h3>Silent Hill 4: The Room (2004)</h3>
+                <ul class="datos">
+                    <li>Plataformas: PlayStation 2, Xbox y PC</li>
+                    <li>Desarrollo: Team Silent (Konami)</li>
+                </ul>
+                <p>
+                    Henry Townshend queda encerrado en su propio departamento, del que solo puede
+                    salir a través de un agujero que conecta con distintos mundos distorsionados,
+                    incluido el pueblo de Silent Hill.
+                </p>
+                <figure>
+                    <img src="SH4.jpg" alt="Silent Hill 4: The Room, entrega de 2004">
+                    <figcaption>Silent Hill 4: The Room (2004)</figcaption>
+                </figure>
+            </article>
 
-            <h3>Silent Hill: Origins (2007)</h3>
-            <p>
-                Precuela del primer juego. El camionero Travis Grady llega al pueblo
-                tras presenciar un incendio y queda atrapado investigando hechos previos
-                a los sucesos de 1999.
-            </p>
-            <img src="SHORIGINS.jpg" alt="Silent Hill: Origins, entrega de 2007">
+            <article class="juego" id="origins">
+                <h3>Silent Hill: Origins (2007)</h3>
+                <ul class="datos">
+                    <li>Plataformas: PlayStation Portable (2007) y PlayStation 2 (2008)</li>
+                    <li>Desarrollo: Climax Studios</li>
+                </ul>
+                <p>
+                    Precuela del primer juego. El camionero Travis Grady llega al pueblo tras ver
+                    un incendio y queda atrapado en hechos previos a los de 1999. Fue la primera entrega desarrollada fuera de Japón.
+                </p>
+                <figure>
+                    <img src="SHORIGINS.jpg" alt="Silent Hill: Origins, entrega de 2007">
+                    <figcaption>Silent Hill: Origins (2007)</figcaption>
+                </figure>
+            </article>
 
-            <h3>Silent Hill: Homecoming (2008)</h3>
-            <p>
-                Alex Shepherd regresa a su ciudad natal, Shepherd's Glen, tras completar
-                el servicio militar, y busca a su hermano menor desaparecido mientras la
-                niebla y los monstruos comienzan a aparecer.
-            </p>
-            <img src="SHHOMECOMING.jpg" alt="Silent Hill: Homecoming, entrega de 2008">
+            <article class="juego" id="homecoming">
+                <h3>Silent Hill: Homecoming (2008)</h3>
+                <ul class="datos">
+                    <li>Plataformas: Xbox 360, PlayStation 3 y PC</li>
+                    <li>Desarrollo: Double Helix Games</li>
+                </ul>
+                <p>
+                    Alex Shepherd regresa a su ciudad natal, Shepherd's Glen, tras el servicio
+                    militar y busca a su hermano menor desaparecido mientras la niebla y los
+                    monstruos comienzan a aparecer.
+                </p>
+                <figure>
+                    <img src="SHHOMECOMING.jpg" alt="Silent Hill: Homecoming, entrega de 2008">
+                    <figcaption>Silent Hill: Homecoming (2008)</figcaption>
+                </figure>
+            </article>
 
-            <h3>Silent Hill: Shattered Memories (2009)</h3>
-            <p>
-                Reinterpretación de la historia original de Harry Mason y Cheryl, con
-                una estructura narrativa que se adapta a las decisiones y respuestas
-                psicológicas del jugador durante la partida.
-            </p>
-            <img src="SHSH.jpg" alt="Silent Hill: Shattered Memories, entrega de 2009">
+            <article class="juego" id="shattered">
+                <h3>Silent Hill: Shattered Memories (2009)</h3>
+                <ul class="datos">
+                    <li>Plataformas: Wii (2009), PlayStation 2 y PlayStation Portable (2010)</li>
+                    <li>Desarrollo: Climax Studios</li>
+                </ul>
+                <p>
+                    Reinterpretación de la historia de Harry Mason y Cheryl, con una estructura
+                    narrativa que se adapta a las decisiones y respuestas psicológicas del jugador durante la partida. No incluye combate.
+                </p>
+                <figure>
+                    <img src="SHSH.jpg" alt="Silent Hill: Shattered Memories, entrega de 2009">
+                    <figcaption>Silent Hill: Shattered Memories (2009)</figcaption>
+                </figure>
+            </article>
 
-            <h3>Silent Hill: Downpour (2012)</h3>
-            <p>
-                Murphy Pendleton, un convicto en tránsito, termina varado en Silent Hill
-                tras un accidente durante su traslado penitenciario, enfrentando tanto a
-                los monstruos del pueblo como su propio pasado.
-            </p>
-            <img src="SHDOWNPOUR.jpg" alt="Silent Hill: Downpour, entrega de 2012">
+            <article class="juego" id="downpour">
+                <h3>Silent Hill: Downpour (2012)</h3>
+                <ul class="datos">
+                    <li>Plataformas: PlayStation 3 y Xbox 360</li>
+                    <li>Desarrollo: Vatra Games</li>
+                </ul>
+                <p>
+                    Murphy Pendleton, un convicto en tránsito, queda varado en Silent Hill tras
+                    un accidente durante su traslado penitenciario y se enfrenta tanto a los
+                    monstruos del pueblo como a su propio pasado.
+                </p>
+                <figure>
+                    <img src="SHDOWNPOUR.jpg" alt="Silent Hill: Downpour, entrega de 2012">
+                    <figcaption>Silent Hill: Downpour (2012)</figcaption>
+                </figure>
+            </article>
 
-            <h3>Silent Hill f (2025)</h3>
-            <p>
-                Entrega ambientada en el Japón rural de la década de 1960, en el pueblo
-                ficticio de Ebisugaoka. Hinako Shimizu queda aislada junto a un grupo de
-                conocidos cuando una niebla densa cubre el pueblo. Es la primera entrega
-                de la saga ambientada fuera de Estados Unidos y con combate más cercano
-                al estilo souls-like.
-            </p>
-            <img src="SHF.jpg" alt="Silent Hill f, entrega de 2025">
+            <article class="juego" id="shf">
+                <h3>Silent Hill f (2025)</h3>
+                <ul class="datos">
+                    <li>Plataformas: PlayStation 5, Xbox Series y PC</li>
+                    <li>Desarrollo: NeoBards Entertainment</li>
+                </ul>
+                <p>
+                    Ambientada en el Japón rural de la década de 1960, en el pueblo ficticio de
+                    Ebisugaoka. Hinako Shimizu queda aislada junto a un grupo de conocidos cuando
+                    una niebla densa cubre el pueblo. Su combate es más cercano al estilo souls-like.
+                </p>
+                <figure>
+                    <img src="SHF.jpg" alt="Silent Hill f, entrega de 2025">
+                    <figcaption>Silent Hill f (2025)</figcaption>
+                </figure>
+            </article>
         </section>
+
         <section id="tabla">
             <h2>Tabla resumen de juegos</h2>
             <table border="1">
@@ -348,13 +427,10 @@
 
     </main>
 
-<button id="btnArriba">Volver arriba</button>
-
-    <footer>
-
-        <p>Trabajo práctico - Etapa 1: HTML - UNPAZ</p>
+    <footer id="pie">
+        <p>Trabajo práctico - Etapa 3: JavaScript - UNPAZ</p>
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
