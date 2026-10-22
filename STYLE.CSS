@@ -1,3 +1,47 @@
+
+#juegos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+#juegos > h2,
+#juegos > p { grid-column: 1 / -1; }
+
+.juego {
+    display: flex;
+    flex-direction: column;
+    background: var(--fondo);
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    padding: 1rem;
+}
+.juego h3 { margin-top: 0; color: #fff; font-size: 1.1rem; }
+.juego figure { margin-top: auto; }
+.datos { padding-left: 1.2rem; font-size: 0.9rem; color: #a9a9a3; }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--borde);
+    border-radius: 4px;
+    background: #000;
+}
+figure { margin: 0.75rem 0; }
+figcaption { font-size: 0.8rem; color: #8a8a85; margin-top: 0.3rem; }
+
+#tabla { overflow-x: auto; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+caption { padding: 0.5rem; color: #a9a9a3; }
+th, td { padding: 0.5rem 0.75rem; text-align: left; border: 1px solid var(--borde); }
+th { background: var(--acento); color: #fff; }
+tbody tr:nth-child(even) { background: var(--fondo); }
+tbody tr:hover { background: #2a1a1a; }
+
 #personajes { display: flex; flex-wrap: wrap; gap: 1rem; }
 #personajes > h2,
 #personajes > p,
