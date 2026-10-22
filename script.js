@@ -1,3 +1,19 @@
+document.querySelectorAll('.juego').forEach(function (juego) {
+    var datos = juego.querySelector('.datos');
+    var boton = document.createElement('button');
+    boton.type = 'button';
+    boton.className = 'btn-ficha';
+    boton.textContent = 'Ver ficha técnica';
+    datos.hidden = true;
+
+    boton.addEventListener('click', function () {
+        datos.hidden = !datos.hidden;
+        boton.textContent = datos.hidden ? 'Ver ficha técnica' : 'Ocultar ficha técnica';
+    });
+
+    juego.querySelector('h3').insertAdjacentElement('afterend', boton);
+    boton.insertAdjacentElement('afterend', datos);
+});
 var tabla = document.getElementById('tabla-juegos');
 var filas = tabla.querySelectorAll('tbody tr');
 
