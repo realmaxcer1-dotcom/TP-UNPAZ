@@ -3,9 +3,9 @@ var video = document.getElementById('video-fondo');
 if (portada && video) {
     var desvanecer = function () {
         var fade = Math.max(0, 1 - window.scrollY / portada.offsetHeight);
-        portada.style.setProperty('--fade', fade);           // el CSS usa esta variable como opacidad del video
-        if (fade === 0 && !video.paused) { video.pause(); }   // ya no se ve: pausar
-        if (fade > 0 && video.paused) { video.play().catch(function () {}); } // vuelve a verse: reanudar
+        portada.style.setProperty('--fade', fade);          
+        if (fade === 0 && !video.paused) { video.pause(); }   
+        if (fade > 0 && video.paused) { video.play().catch(function () {}); } 
     };
     window.addEventListener('scroll', desvanecer);
     desvanecer();
@@ -169,7 +169,7 @@ if (imagenes.length) {
     caja.querySelector('.lb-cerrar').addEventListener('click', cerrar);
     caja.querySelector('.lb-prev').addEventListener('click', function () { mostrar(actual - 1); });
     caja.querySelector('.lb-next').addEventListener('click', function () { mostrar(actual + 1); });
-    caja.addEventListener('click', function (e) { if (e.target === caja) { cerrar(); } });   // clic en el fondo
+    caja.addEventListener('click', function (e) { if (e.target === caja) { cerrar(); } });   
 
     lbImg.addEventListener('click', function (e) {
         if (!lbImg.classList.contains('ampliada')) {
@@ -198,20 +198,20 @@ if (window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)')
     botonLinterna.setAttribute('aria-pressed', 'true');
     document.body.appendChild(botonLinterna);
 
-    var luzX = window.innerWidth / 2, luzY = window.innerHeight * 0.35;       // posición actual de la luz
-    var metaX = luzX, metaY = luzY;                                           // hacia dónde va (el mouse)
+    var luzX = window.innerWidth / 2, luzY = window.innerHeight * 0.35;       
+    var metaX = luzX, metaY = luzY;                                           
     var suavidad = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 1 : 0.18;
     var animandoLuz = false;
 
     var moverLuz = function () {
-        luzX += (metaX - luzX) * suavidad;                                    // se acerca un poco al mouse en cada cuadro
+        luzX += (metaX - luzX) * suavidad;                                   
         luzY += (metaY - luzY) * suavidad;
         linterna.style.setProperty('--lx', luzX + 'px');
         linterna.style.setProperty('--ly', luzY + 'px');
         if (Math.abs(metaX - luzX) > 0.5 || Math.abs(metaY - luzY) > 0.5) {
-            requestAnimationFrame(moverLuz);                                  // todavía no llegó: sigue animando
+            requestAnimationFrame(moverLuz);                                  
         } else {
-            animandoLuz = false;                                              // llegó: descansa hasta el próximo movimiento
+            animandoLuz = false;                                             
         }
     };
     document.addEventListener('mousemove', function (e) {
@@ -221,7 +221,7 @@ if (window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)')
     });
     moverLuz();
 
-    botonLinterna.addEventListener('click', function () {                     // prender / apagar
+    botonLinterna.addEventListener('click', function () {                     
         linterna.hidden = !linterna.hidden;
         botonLinterna.textContent = linterna.hidden ? 'Linterna: no' : 'Linterna: sí';
         botonLinterna.setAttribute('aria-pressed', String(!linterna.hidden));
