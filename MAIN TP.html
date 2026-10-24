@@ -2,14 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Silent Hill - Sitio Web de la Saga</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header id="encabezado">
-        <h1>SILENT HILL</h1>
-        <p>Sitio informativo sobre la saga de videojuegos de terror publicada por Konami</p>
+        <video id="video-fondo" autoplay muted loop playsinline poster="fondo.jpg">
+            <source src="gameplay.mp4" type="video/mp4">
+        </video>
+        <div class="hero-texto">
+            <h1>SILENT HILL</h1>
+            <p>Sitio informativo sobre la saga de videojuegos de terror publicada por Konami</p>
+        </div>
     </header>
 
 
@@ -51,6 +57,22 @@
                 <figure>
                     <img src="SH1.jpg" alt="Silent Hill, primera entrega de 1999">
                     <figcaption>Silent Hill (1999)</figcaption>
+                </figure>
+            </article>
+
+             <article class="juego" id="playnovel">
+                <h3>Play Novel: Silent Hill (2001)</h3>
+                <ul class="datos">
+                    <li>Plataforma: Game Boy Advance</li>
+                    <li>Desarrollo: Konami</li>
+                </ul>
+                <p>
+                    Versión del primer juego con formato de novela visual, lanzada en Japón para
+                    Game Boy Advance. Reinterpreta la historia original e incluye secuencias de video.
+                </p>
+                <figure>
+                    <img src="PLAYNOVEL.jpg" alt="Play Novel: Silent Hill, versión de 2001 para Game Boy Advance">
+                    <figcaption>Play Novel: Silent Hill (2001)</figcaption>
                 </figure>
             </article>
 
@@ -121,6 +143,55 @@
                 </figure>
             </article>
 
+             <article class="juego" id="arcade">
+                <h3>Silent Hill: The Arcade (2007)</h3>
+                <ul class="datos">
+                    <li>Plataforma: Arcade</li>
+                    <li>Desarrollo: Konami</li>
+                </ul>
+                <p>
+                    Versión para máquinas arcade lanzada en 2007, parte de las entregas
+                    secundarias de la franquicia.
+                </p>
+                <figure>
+                    <!-- IMAGEN: SHARCADE.jpg = foto del gabinete arcade o captura de Silent Hill: The Arcade -->
+                    <img src="SHARCADE.jpg" alt="Silent Hill: The Arcade, versión arcade de 2007">
+                    <figcaption>Silent Hill: The Arcade (2007)</figcaption>
+                </figure>
+            </article>
+
+            <article class="juego" id="orphan">
+                <h3>Silent Hill: Orphan, Orphan 2 y Orphan 3 (2007-2010)</h3>
+                <ul class="datos">
+                    <li>Plataforma: teléfonos móviles (Java ME)</li>
+                    <li>Publicación: Konami</li>
+                </ul>
+                <p>
+                    Trilogía de juegos para teléfonos móviles: Orphan (2007), Orphan 2 (2008) y
+                    Orphan 3 (2010). Orphan 3 es la secuela directa de los dos anteriores.
+                </p>
+                <figure>
+                    <img src="SHORPHAN.jpg" alt="Silent Hill: Orphan, juego para móviles">
+                    <figcaption>Silent Hill: Orphan</figcaption>
+                </figure>
+            </article>
+
+            <article class="juego" id="escape">
+                <h3>Silent Hill: The Escape (2007)</h3>
+                <ul class="datos">
+                    <li>Plataforma: teléfonos móviles</li>
+                    <li>Publicación: Konami</li>
+                </ul>
+                <p>
+                    Juego para teléfonos móviles lanzado en diciembre de 2007, también conocido
+                    como Silent Hill DX. No debe confundirse con Silent Hill: Orphan.
+                </p>
+                <figure>
+                    <img src="SHESCAPE.jpg" alt="Silent Hill: The Escape, juego para móviles">
+                    <figcaption>Silent Hill: The Escape (2007)</figcaption>
+                </figure>
+            </article>
+
             <article class="juego" id="homecoming">
                 <h3>Silent Hill: Homecoming (2008)</h3>
                 <ul class="datos">
@@ -171,6 +242,88 @@
                 </figure>
             </article>
 
+            <article class="juego" id="hdcollection">
+                <h3>Silent Hill HD Collection (2012)</h3>
+                <ul class="datos">
+                    <li>Plataformas: PlayStation 3 y Xbox 360</li>
+                    <li>Desarrollo: Hijinx Studios</li>
+                </ul>
+                <p>
+                    Recopilación con versiones remasterizadas en alta definición de Silent Hill 2
+                    y Silent Hill 3.
+                </p>
+                <figure>
+                    <img src="SHHD.jpg" alt="Silent Hill HD Collection, recopilación de 2012">
+                    <figcaption>Silent Hill HD Collection (2012)</figcaption>
+                </figure>
+            </article>
+
+            <article class="juego" id="bom">
+                <h3>Silent Hill: Book of Memories (2012)</h3>
+                <ul class="datos">
+                    <li>Plataforma: PlayStation Vita</li>
+                    <li>Desarrollo: WayForward Technologies</li>
+                </ul>
+                <p>
+                    Juego con elementos de rol y exploración de mazmorras. El protagonista, creado
+                    por el jugador, recibe el misterioso Book of Memories, que describe toda su
+                    vida. Incluye criaturas de entregas anteriores, como Pyramid Head.
+                </p>
+                <figure>
+                    <img src="SHBOM.jpg" alt="Silent Hill: Book of Memories, entrega de 2012">
+                    <figcaption>Silent Hill: Book of Memories (2012)</figcaption>
+                </figure>
+            </article>
+
+            <article class="juego" id="ascension">
+                <h3>Silent Hill: Ascension (2023)</h3>
+                <ul class="datos">
+                    <li>Plataformas: navegador web, Android e iOS</li>
+                    <li>Desarrollo: Genvid Entertainment y Konami (31 de octubre de 2023)</li>
+                </ul>
+                <p>
+                    Serie interactiva transmitida por streaming, en la que la audiencia participa
+                    en la historia mediante votaciones.
+                </p>
+                <figure>
+                    <img src="SHASCENSION.jpg" alt="Silent Hill: Ascension, serie interactiva de 2023">
+                    <figcaption>Silent Hill: Ascension (2023)</figcaption>
+                </figure>
+            </article>
+
+            <article class="juego" id="shortmessage">
+                <h3>Silent Hill: The Short Message (2024)</h3>
+                <ul class="datos">
+                    <li>Plataforma: PlayStation 5</li>
+                    <li>Desarrollo: Konami y HexaDrive (31 de enero de 2024, gratuito)</li>
+                </ul>
+                <p>
+                    Anita, una joven en la Alemania actual, sigue los mensajes de su amiga Maya hasta
+                    un complejo de departamentos abandonado en Kettenstadt. Transcurre fuera del
+                    pueblo de Silent Hill y trata temas como las redes sociales.
+                </p>
+                <figure>
+                    <img src="SHSHORTMESSAGE.jpg" alt="Silent Hill: The Short Message, entrega de 2024">
+                    <figcaption>Silent Hill: The Short Message (2024)</figcaption>
+                </figure>
+            </article>
+
+            <article class="juego" id="sh2remake">
+                <h3>Silent Hill 2 Remake (2024)</h3>
+                <ul class="datos">
+                    <li>Plataformas: PlayStation 5 y PC</li>
+                    <li>Desarrollo: Bloober Team</li>
+                </ul>
+                <p>
+                    Remake de Silent Hill 2 lanzado el 8 de octubre de 2024. Rehace el juego de
+                    2001 con gráficos y jugabilidad actualizados.
+                </p>
+                <figure>
+                    <img src="SH2REMAKE.jpg" alt="Remake de Silent Hill 2, entrega de 2024">
+                    <figcaption>Silent Hill 2 Remake (2024)</figcaption>
+                </figure>
+            </article>
+
             <article class="juego" id="shf">
                 <h3>Silent Hill f (2025)</h3>
                 <ul class="datos">
@@ -187,74 +340,61 @@
                     <figcaption>Silent Hill f (2025)</figcaption>
                 </figure>
             </article>
+
+             <article class="juego" id="townfall">
+                <h3>Silent Hill: Townfall (2026)</h3>
+                <ul class="datos">
+                    <li>Plataformas: PlayStation 5 y PC</li>
+                    <li>Desarrollo: Screen Burn Interactive</li>
+                </ul>
+                <p>
+                    Lanzado el 24 de septiembre de 2026. Simon Ordell regresa a St. Amelia, una
+                    isla aislada de Escocia ambientada en 1996, y la encuentra casi desierta bajo
+                    la niebla. Se juega íntegramente en primera persona, con una televisión
+                    portátil llamada CRTV como herramienta principal, y tiene cinco finales.
+                    Es una historia independiente de las entregas anteriores.
+                </p>
+                <figure>
+                    <img src="SHTOWNFALL.jpg" alt="Silent Hill: Townfall, entrega de 2026">
+                    <figcaption>Silent Hill: Townfall (2026)</figcaption>
+                </figure>
+            </article>
+
+            
         </section>
 
         <section id="tabla">
             <h2>Tabla resumen de juegos</h2>
-            <table border="1">
+            <table border="1" id="tabla-juegos">
+                <caption>Juegos de la saga Silent Hill por año de lanzamiento</caption>
                 <thead>
                     <tr>
-                        <th>Juego</th>
                         <th>Año</th>
-                        <th>Protagonista</th>
-                        <th>Plataforma original</th>
+                        <th>Juego</th>
+                        <th>Plataformas</th>
+                        <th>Desarrollo</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Silent Hill</td>
-                        <td>1999</td>
-                        <td>Harry Mason</td>
-                        <td>PlayStation</td>
-                    </tr>
-                    <tr>
-                        <td>Silent Hill 2</td>
-                        <td>2001</td>
-                        <td>James Sunderland</td>
-                        <td>PlayStation 2</td>
-                    </tr>
-                    <tr>
-                        <td>Silent Hill 3</td>
-                        <td>2003</td>
-                        <td>Heather Mason</td>
-                        <td>PlayStation 2</td>
-                    </tr>
-                    <tr>
-                        <td>Silent Hill 4: The Room</td>
-                        <td>2004</td>
-                        <td>Henry Townshend</td>
-                        <td>PlayStation 2</td>
-                    </tr>
-                    <tr>
-                        <td>Silent Hill: Origins</td>
-                        <td>2007</td>
-                        <td>Travis Grady</td>
-                        <td>PSP</td>
-                    </tr>
-                    <tr>
-                        <td>Silent Hill: Homecoming</td>
-                        <td>2008</td>
-                        <td>Alex Shepherd</td>
-                        <td>Xbox 360 / PS3</td>
-                    </tr>
-                    <tr>
-                        <td>Silent Hill: Shattered Memories</td>
-                        <td>2009</td>
-                        <td>Harry Mason</td>
-                        <td>Wii</td>
-                    </tr>
-                    <tr>
-                        <td>Silent Hill: Downpour</td>
-                        <td>2012</td>
-                        <td>Murphy Pendleton</td>
-                        <td>Xbox 360 / PS3</td>
-                    </tr>
-                    <tr>
-                        <td>Silent Hill f</td>
-                        <td>2025</td>
-                        <td>Hinako Shimizu</td>
-                        <td>PS5 / Xbox Series / PC</td>
-                    </tr>
+                    <tr><td>1999</td><td>Silent Hill</td><td>PlayStation</td><td>Team Silent</td></tr>
+                    <tr><td>2001</td><td>Play Novel: Silent Hill</td><td>Game Boy Advance</td><td>Konami</td></tr>
+                    <tr><td>2001</td><td>Silent Hill 2</td><td>PS2, Xbox, PC</td><td>Team Silent</td></tr>
+                    <tr><td>2003</td><td>Silent Hill 3</td><td>PS2, PC</td><td>Team Silent</td></tr>
+                    <tr><td>2004</td><td>Silent Hill 4: The Room</td><td>PS2, Xbox, PC</td><td>Team Silent</td></tr>
+                    <tr><td>2007</td><td>Silent Hill: Origins</td><td>PSP, PS2</td><td>Climax Studios</td></tr>
+                    <tr><td>2007</td><td>Silent Hill: The Arcade</td><td>Arcade</td><td>Konami</td></tr>
+                    <tr><td>2007-2010</td><td>Silent Hill: Orphan, Orphan 2 y Orphan 3</td><td>Móviles</td><td>Konami</td></tr>
+                    <tr><td>2007</td><td>Silent Hill: The Escape</td><td>Móviles</td><td>Konami</td></tr>
+                    <tr><td>2008</td><td>Silent Hill: Homecoming</td><td>Xbox 360, PS3, PC</td><td>Double Helix Games</td></tr>
+                    <tr><td>2009</td><td>Silent Hill: Shattered Memories</td><td>Wii, PS2, PSP</td><td>Climax Studios</td></tr>
+                    <tr><td>2012</td><td>Silent Hill: Downpour</td><td>PS3, Xbox 360</td><td>Vatra Games</td></tr>
+                    <tr><td>2012</td><td>Silent Hill HD Collection</td><td>PS3, Xbox 360</td><td>Hijinx Studios</td></tr>
+                    <tr><td>2012</td><td>Silent Hill: Book of Memories</td><td>PlayStation Vita</td><td>WayForward Technologies</td></tr>
+                    <tr><td>2023</td><td>Silent Hill: Ascension</td><td>Web, Android, iOS</td><td>Genvid Entertainment y Konami</td></tr>
+                    <tr><td>2024</td><td>Silent Hill: The Short Message</td><td>PlayStation 5</td><td>Konami y HexaDrive</td></tr>
+                    <tr><td>2024</td><td>Silent Hill 2 Remake</td><td>PS5, PC</td><td>Bloober Team</td></tr>
+                    <tr><td>2025</td><td>Silent Hill f</td><td>PS5, Xbox Series, PC</td><td>NeoBards Entertainment</td></tr>
+                    <tr><td>2026</td><td>Silent Hill: Townfall</td><td>PS5, PC</td><td>Screen Burn Interactive</td></tr>
                 </tbody>
             </table>
         </section>
@@ -394,10 +534,10 @@
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>Sitio realizado como trabajo práctico universitario.</p>
+            <p>Pagina web TP 3 etapas </p>
             <ul>
-                <li>Email: contacto@silenthillfan.edu.ar</li>
-                <li>Instagram: @silenthill.unpaz</li>
+                <li>Email: contacto@silenthillfan.com</li>
+                <li>Instagram: @silenthill.konami</li>
             </ul>
 
             <form id="form-contacto" action="#" method="post">
@@ -417,7 +557,7 @@
                 <p><button type="submit">Enviar</button></p>
             </form>
 
-            <h3>Fuentes y enlaces externos</h3>
+            <h3>Fuentes oficiales y enlaces externos</h3>
             <ul>
                 <li><a href="https://www.konami.com/games/silenthill/" target="_blank" rel="noopener">Sitio oficial de Silent Hill (Konami)</a></li>
                 <li><a href="https://silenthill.fandom.com/wiki/Silent_Hill_Wiki" target="_blank" rel="noopener">Silent Hill Wiki (Fandom)</a></li>
@@ -428,7 +568,7 @@
     </main>
 
     <footer id="pie">
-        <p>Trabajo práctico - Etapa 3: JavaScript - UNPAZ</p>
+        <p>Trabajo práctico - Etapa 1,2 y 3: JavaScript - CSS - HTML - UNPAZ</p>
     </footer>
 
     <script src="script.js"></script>
