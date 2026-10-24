@@ -229,8 +229,7 @@ a, button { cursor: var(--cursor-mano); }
 input, textarea { cursor: text; }
 
 @media (prefers-reduced-motion: reduce) {
-    #encabezado { height: 70vh; }
-    .hero-texto h1 { font-size: 2.2rem; letter-spacing: 0.15em; }
+     #encabezado::before { animation: none; }
     .reveal { transition: none; }
     html { scroll-behavior: auto; }
 }
@@ -279,7 +278,6 @@ main img:hover { transform: scale(1.04); }
 
 #btn-linterna { position: fixed; left: 1rem; bottom: 1rem; z-index: 60; font-size: 0.8rem; padding: 0.35rem 0.8rem; }
 
-/* ### QUÉ HACE: al imprimir la página o guardarla como PDF, la linterna no aparece. */
 @media print { #linterna, #btn-linterna { display: none; } }
 
 @media (max-width: 900px) {
@@ -287,7 +285,8 @@ main img:hover { transform: scale(1.04); }
 }
 
 @media (max-width: 600px) {
-    #encabezado h1 { font-size: 2.2rem; letter-spacing: 0.15em; }
+    #encabezado { height: 70vh; }
+    .hero-texto h1 { font-size: 2.2rem; letter-spacing: 0.15em; }
     #menu { position: static; }
     #menu ul { flex-direction: column; }
     #menu a { text-align: center; }
