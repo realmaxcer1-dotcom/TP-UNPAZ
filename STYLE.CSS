@@ -15,7 +15,14 @@
 
 body {
     margin: 0;
-    background: var(--fondo);
+    background-color: var(--fondo);
+    background-image:
+        linear-gradient(rgba(14, 16, 20, 0.55), rgba(14, 16, 20, 0.55)),
+        url("BACKGROUND.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: var(--texto);
     font-family: var(--fuente-texto);
     line-height: 1.6;
@@ -144,7 +151,7 @@ main {
     padding: 1rem;
 }
 main > section {
-    background: var(--superficie);
+    background: rgba(30, 33, 38, 0.9);
     border: 1px solid var(--borde);
     border-radius: 6px;
     padding: 1.5rem;
